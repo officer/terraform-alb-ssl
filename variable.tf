@@ -34,7 +34,7 @@ variable "subject_alternative_names" {
 }
 variable "prefix" {
   description   = "(Optional) namespace default: ALB"
-  default       = "ALB"
+  default       = "alb"
   type          = "string"
 }
 
