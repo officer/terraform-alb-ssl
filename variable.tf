@@ -17,7 +17,7 @@ variable "security_groups" {
 
 variable "domain_name" {
   description   = "(Required) ALB domain name"
-  type          = "String"
+  type          = "string"
 }
 
 variable "zone_id" {
@@ -41,9 +41,9 @@ variable "prefix" {
 variable "tags" {
   description = "(Optional) Tags for resource"
   type        = "map"
-  default     = "${map(
-    "CreatedBy", "Terraform"
-  )}"
+  default = {
+    ENV = "TEST"
+  }
 }
 
 
