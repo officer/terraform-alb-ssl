@@ -2,7 +2,7 @@
 
 variable "region" {
   description   = "(Required) the region where certificate will be placed in"
-  type          = "list"
+  type          = "string"
 }
 
 variable "subnets" {
