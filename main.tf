@@ -3,6 +3,7 @@ module "logging_bucket" {
   source    = "github.com/officer/terraform-logging-bucket.git"
   region    = "${var.region}"
   namespace = "${var.prefix}"
+  alb       = "true"
   tags      = "${var.tags}"
 }
 
